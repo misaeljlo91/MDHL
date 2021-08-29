@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+    /* Encabezado */
+.title{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+#header_image{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    opacity: 0.5;
+}
+#principal_logo{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: 5rem;
+    top: 22vh;
+}
+.subtitle{
+    background-color: black;
+    padding: 10px;
+    margin: 0 20px 20px 20px;
+    text-align: center;
+    color: white
+}
+    /* Barra de navegación */
+.navegation_bar{
+    margin-left: 50px;
+    width: 200px;
+}
+    /* Contenidos */
+.content{
+        columns: 2;
+}
+.information{
+    margin: 0 50px 0 -100px;
+    text-align: justify;
+}
+.image_page{
+    margin: 20px;
+}
+    /* Home */
+.date{
+    text-indent: 2.5rem;
+    line-height: 50px;
+    font-size: 25px;
+}
+    /* About us */
+.about{
+    text-indent: 2.5rem;
+    line-height: 50px;
+    font-size: 25px;
+}

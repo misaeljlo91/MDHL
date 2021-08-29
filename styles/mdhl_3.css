@@ -1,0 +1,696 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body.container{
+    display: flex;
+    flex-direction: column;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+/* Encabezado */
+header{
+    order: 2;
+}
+#principal_logo{
+    position: absolute;
+    height: 14vh;
+    top: 1.5vh;
+    left: 1.5rem;
+}
+h3.title{
+    position: absolute;
+    top: 2.2rem;
+    padding-left: 8rem;
+    font-size: 2.2rem;
+}
+a.title_bar{
+    color: white;
+    text-decoration: none;
+}
+p.header_image{
+    height: 50vh;
+    background-image: url(../assets/imagenes/design1_image1.jpg);
+    background-position: center;
+    width: 100%;
+}
+h2.subtitle{
+    padding: 1rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Barra de navegación */
+input[type=checkbox].menu, label.menu{
+    display: none;
+}
+nav{
+    order: 1;
+    border-style: solid none none none;
+    border-width: 3vh;
+    list-style-type: none;
+    padding: 0.8rem;
+    overflow: hidden;
+    background-color: yellowgreen;
+}
+#navegation_bar{
+    list-style-type: none;
+}
+li{
+    float: right;
+}
+li a{
+    display: block;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: black;
+}
+/* Contenido */
+main{
+    display: flex;
+    order: 3;
+    margin: 2rem 3rem 2rem 3rem;
+}
+section.information{
+    text-align: justify;
+}
+h3.subtitle_content{
+    border-style: none none none solid;
+    border-color: yellowgreen;
+    border-width: 0.4rem;
+    text-indent: 1rem;
+    line-height: 50px;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+}
+p.text{
+    text-indent: 2.5rem;
+}
+#image_page{
+    margin-right: 3rem;
+    width: 400px;
+    height: auto;
+}
+/* Registration */
+fieldset{
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-right: 20rem;
+}
+input[type=text]:not(.parent_data), input[type=date]:not(.parent_data){
+    height: 2rem;
+    padding: 10px;
+    margin-bottom: .5rem;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus, input[type=date]:focus{
+    border: 3px solid grey;
+}
+input.first_name{
+    width: 89.9%;
+}
+input.last_name{
+    width: 90.3%;
+}
+input.address{
+    width: 87%;
+}
+div.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input.city{
+    width: 100%;
+    margin: 0 4rem 0 1rem;
+}
+label.zip_code{
+    width: 25%;
+}
+input.zip_code{
+    width: 100%;
+}
+label.birthdate{
+    width: 40%;
+}
+input.birthdate{
+    width: 75%;
+    margin-right: 1rem;
+}
+select{
+    height: 2rem;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+select:focus{
+    border: 3px solid grey;
+}
+select.gender{
+    width: 100%;
+    margin: 0 1vw 0 1vw;
+}
+select.grade{
+    width: 100%;
+    margin-left: 1vw;
+}
+p.text_form{
+    margin: 1rem 0 1rem 0;
+    text-indent: 1.5rem;
+}
+label.option_position, label.option_uniform{
+    margin-right: 1.5rem;
+}
+label.option_elementary{
+    margin-right: 1rem;
+}
+input[type=text].parent_data_name{
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 3px solid #ccc;
+    padding: 0 5px 5px 10px;
+    width: 40vw;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=date].parent_data_date{
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 3px solid #ccc;
+    padding: 0 5px 5px 10px;
+    width: 52vw;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text].parent_data_name:focus, input[type=date].parent_data_date:focus{
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 3px solid grey;
+}
+input[type=submit], input[type=reset]{
+        background-color: yellowgreen;
+        color: black;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+input[type=submit]{
+    margin-left: 34rem;
+}
+input[type=submit]:hover, input[type=reset]:hover{
+        background-color: black;
+        color: white
+}
+/* Submit */
+table.registration_form{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    margin-left: 23rem;
+}
+caption.registration_form{
+    border: 1px solid black;
+    padding: .5rem;
+    background-color: yellowgreen;
+}
+th.registration_form{
+    border: 1px solid black;
+    padding: .5rem;
+    width: 19vw;
+    background-color: #ccc;
+    text-align: center;
+}
+td.registration_form{
+    border: 1px solid black;
+    padding: .3rem;
+    font-weight: 900;
+    text-align: left;
+}
+td.registration_form:nth-child(1){
+    text-indent: 1rem;
+}
+td.registration_form:nth-child(2){
+    font-weight: normal;
+    text-align: center;
+}
+input[type=button]{
+    background-color: yellowgreen;
+    color: black;
+    padding: 12px 20px;
+    margin-left: 37rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=button]:hover{
+    background-color: black;
+    color: white
+}
+/* Game information */
+table:not(.registration_form){
+    border: 5px solid black;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 0 1rem 10rem;
+}
+caption:not(.registration_form){
+    font-style: italic;
+    caption-side: bottom;
+    margin-top: .5rem;
+    text-align: left;
+}
+th:not(.registration_form){
+    background-color:yellowgreen;
+    border-bottom: 5px solid black;
+    border-left: 3px solid black;
+    text-align: center;
+    padding: .5rem;
+}
+tbody{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+tbody tr:not(.registration_form):nth-child(2n){
+    background-color: yellowgreen;
+}
+td:not(.registration_form){
+    border-bottom: 1px solid black;
+    padding: .3rem;
+}
+td.date{
+    border: 3px solid black;
+}
+div.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* Rules */
+main.rules{
+    display: flex;
+    flex-direction: column;
+}
+h3.title_rules{
+    text-align: center;
+}
+h3.subtitle_rules{
+    margin-bottom: 1rem;
+}
+ol.number_rules{
+    margin-left: 1rem;
+    font-weight: 900;
+}
+li.number_rules_3{
+    margin-right: 25rem;
+}
+p.number_rules{
+    font-style: normal;
+    font-weight: normal;
+}
+ol.alphabet_rules{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem 2rem;
+    list-style-type: lower-alpha;
+    font-weight: normal;
+}
+ul.marker_rules{
+    list-style-type: circle;
+    margin-left: 1rem;
+}
+@media screen and (max-width: 782px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body.container{
+        display: flex;
+        flex-direction: column;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+    /* Encabezado */
+    #principal_logo{
+        position: absolute;
+        height: 10vh;
+        top: .45rem;
+        left: 1rem;
+    }
+    h3.title{
+        position: initial;
+        background-color: yellowgreen;
+        border-top: .8rem solid black;
+        padding: .8rem 0 1rem 5.3rem;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    a.title_bar{
+        color: white;
+        text-decoration: none;
+    }
+    p.header_image{
+        background-image: url(../assets/imagenes/design1_image1.jpg);
+        background-position: center;
+        height: 30vh;
+        width: 100%;
+    }
+    h2.subtitle{
+        background-color: black;
+        color: white;
+        padding: .8rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    /* Barra de navegación */
+    nav.navegation_bar{
+        background-color: black;
+        border-style: none;
+        padding: 0;
+        position: fixed;
+        top: 4rem;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform .5s;
+    }
+    #navegation_bar{
+        list-style-type: none;
+    }
+    input[type=checkbox].menu, label.menu{
+        display: initial;
+    }
+    input[type=checkbox].menu:checked ~ nav{
+        transform: translateX(0);
+    }
+    input[type=checkbox].menu{
+        display: none;
+        position: absolute;
+    }
+    label.menu{
+        position: absolute;
+        top: 1.68rem;
+        right: .7rem;
+        font-size: 1rem;
+        color: white;
+        font-weight: bold;
+    }
+    label.menu:hover{
+        color: black;
+    }
+    span.open{
+        display: inline-block;
+    }
+    span.close{
+        display: none;
+    }
+    input[type=checkbox].menu:checked + label span.close{
+        display: inline-block;
+    }
+    input[type=checkbox].menu:checked + label span.open{
+        display: none;
+    }
+    li{
+        float: none;
+    }
+    li a{
+        display: block;
+        padding: 1rem;
+        width: 45vw;;
+        color: white;
+        text-decoration: none;
+    }
+    li a:hover{
+        background-color: rgb(22, 20, 20);
+    }
+    /* Contenido */
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 1.5rem 1rem 1.5rem;
+    }
+    section.information{
+        text-align: justify;
+    }
+    h3.subtitle_content{
+        border-style: none none none solid;
+        border-color: yellowgreen;
+        border-width: 0.4rem;
+        text-indent: 1rem;
+        line-height: 50px;
+        margin-bottom: 1rem;
+        margin-left: 1.5rem;
+    }
+    p.text{
+        text-indent: 1rem;
+    }
+    #image_page{
+        display: none;
+    }
+    /* Registration */
+    fieldset{
+        background-color: #f2f2f2;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+    input[type=text]:not(.parent_data), input[type=date]:not(.parent_data){
+        height: 1.5rem;
+        padding: 10px;
+        margin-bottom: .5rem;
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+    }
+    input[type=text]:focus, input[type=date]:focus{
+        border: 3px solid grey;
+    }
+    input.first_name{
+        width: 78.1%;
+    }
+    input.last_name{
+        width: 78.6%;
+    }
+    input.address{
+        width: 71.7%;
+    }
+    div.form{
+        display: initial;
+    }
+    input.city{
+        width: 89.9%;
+        margin: 0;
+    }
+    label.zip_code{
+        width: 0;
+    }
+    input.zip_code{
+        width: 81.7%;
+    }
+    label.birthdate{
+        width: 0;
+    }
+    input.birthdate{
+        width: 79.2%;
+        margin-right: 0;
+    }
+    select{
+        height: 1.5rem;
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+    }
+    select:focus{
+        border: 3px solid grey;
+    }
+    select.gender{
+        width: 84.4%;
+        margin: 0 0 .5rem 0;
+    }
+    select.grade{
+        width: 86.6%;
+        margin: 0;
+    }
+    p.text_form{
+        margin: 1rem 0 1rem 0;
+        text-indent: 1rem;
+    }
+    /* FALTA LOS LABELS */
+    input[type=text].parent_data_name{
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 3px solid #ccc;
+        padding: 0 5px 5px 10px;
+        width: 52.2%;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+    }
+    input[type=date].parent_data_date{
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 3px solid #ccc;
+        padding: 0 5px 5px 10px;
+        width: 89.6%;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+    }
+    input[type=text].parent_data_name:focus, input[type=date].parent_data_date:focus{
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 3px solid grey;
+    }
+    input[type=submit], input[type=reset]{
+        background-color: yellowgreen;
+        color: black;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type=submit]{
+        margin-left: 9rem;
+    }
+    input[type=submit]:hover, input[type=reset]:hover{
+        background-color: black;
+        color: white
+    }
+    /* Submit */
+    table.registration_form{
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+        margin-left: 2.5rem;
+    }
+    caption.registration_form{
+        border: 1px solid black;
+        padding: .5rem;
+        background-color: yellowgreen;
+    }
+    th.registration_form{
+        border: 1px solid black;
+        padding: .3rem;
+        width: 50%;
+        background-color: #ccc;
+        text-align: center;
+    }
+    td.registration_form{
+        border: 1px solid black;
+        padding: .3rem;
+        font-weight: 900;
+        text-align: left;
+    }
+    td.registration_form:nth-child(1){
+        text-indent: .5rem;
+    }
+    td.registration_form:nth-child(2){
+        font-weight: normal;
+        text-align: center;
+    }
+    input[type=button]{
+        background-color: yellowgreen;
+        color: black;
+        padding: 12px 20px;
+        margin-left: 12rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type=button]:hover{
+        background-color: black;
+        color: white
+    }
+    /* Game information */
+    table:not(.registration_form){
+        border: 5px solid black;
+        border-collapse: collapse;
+        margin: 0 0 1rem 0;
+    }
+    caption:not(.registration_form){
+        font-style: italic;
+        caption-side: bottom;
+        text-align: left;
+    }
+    th:not(.registration_form){
+        background-color:yellowgreen;
+        border-bottom: 5px solid black;
+        border-left: 3px solid black;
+        text-align: center;
+        padding: .3rem .85rem .3rem .85rem;
+    }
+    tbody{
+        font-size: 12px;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    tbody tr:not(.registration_form):nth-child(2n){
+        background-color: yellowgreen;
+    }
+    td:not(.registration_form){
+        border-bottom: 1px solid black;
+    }
+    td.date{
+        border: 3px solid black;
+    }
+    div.footer{
+        display: flex;
+        flex-direction: column;
+    }
+    /* Rules */
+    main.rules{
+        display: flex;
+        flex-direction: column;
+    }
+    h3.title_rules{
+        text-align: center;
+    }
+    h3.subtitle_rules{
+        margin-bottom: 1rem;
+    }
+    ol.number_rules{
+        margin-left: 1rem;
+        font-weight: 900;
+    }
+    p.number_rules{
+        font-style: normal;
+        font-weight: normal;
+    }
+    li.number_rules_3{
+        margin-right: 0;
+    }
+    ol.alphabet_rules{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 1rem 1rem;
+        list-style-type: lower-alpha;
+        font-weight: normal;
+    }
+    ul.marker_rules{
+        list-style-type: circle;
+        margin-left: 1rem;
+    }
+}

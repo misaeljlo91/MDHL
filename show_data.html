@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./styles/mdhl_3.css">
+    <link rel="shortcut icon" href="logoMDHL.ico" type="image/x-icon">
+</head>
+<body class="container">
+<!-- Encabezado de la página web-->
+    <header>
+        <h3 class="title"><a class="title_bar" href="index.html">Mighty Ducks Hockey League</a></h3>
+        <p class=header_image></p>
+        <h2 class="subtitle">Registration form</h2>
+        <img src="./assets/imagenes/logoMDHL.png" alt="Logo de MDHL" id="principal_logo">
+    </header>
+<!--Barra de navegación-->
+    <input type="checkbox" id="menu" class="menu" name="Menu">
+    <label for="menu" class="menu">
+        <span class="open">&equiv; Menu</span>
+        <span class="close">&equiv; Close</span>
+    </label>
+    <nav class="navegation_bar">    
+        <ul id="navegation_bar">
+            <li><a href="registration.html">Registration form</a></li>
+            <li><a href="game_information.html">Game information</a></li>
+            <li><a href="about.html">About MDHL</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+<!--Contenidos de la página web-->
+    <main>
+        <section class="information">
+            <p class="text">The following information has been sent as your feedback:</p><br>
+            <table class="registration_form">
+                <caption class="registration_form"><b>Player's data</b></caption>
+                <thead>
+                    <tr>
+                        <th class="registration_form">Form Field</th>
+                        <th class="registration_form">Field Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <script language="javascript">
+                        var args = location.search.substr(1).split('&');
+                        for (var i = 0; i < args.length; ++i) {
+                            var parts = args[i].split('=');
+                            if (parts != null) {
+                            var field = parts[0];
+                            var value = parts[1];
+                            if (value == null) {
+                              value = "null"
+                            }
+                            else {
+                            value = unescape(value.replace(/\+/g, ' '));
+                            }
+                            document.writeln('<tr class="registration_form"><td class="registration_form">' + field + '</td>');
+                            document.writeln('<td class="registration_form">' + value + '</td></tr>');
+                            }
+                        }
+                    </script>
+                    <noscript>
+                        <tr>
+                            <td>
+                                <p>You need to turn on Javascript in your browser.</p>
+                                <p>In Microsoft Internet Explorer 4 or greater:</p>
+                                <ul>
+                                    <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+                                    <li>Click on the "Security" tab.</li>
+                                    <li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+                                    and then click on "Settings...".)</li>
+                                    <li>Under "Active scripting" make sure "Enable" is selected.</li>
+                                </ul>
+                                <p>In Netscape version 4 or greater:</p>
+                                <ul>
+                                    <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+                                    <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+                                    <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+                                    <li>Click the <b>OK</b> button.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </noscript>
+                </tbody>
+            </table>
+            <input type="button" value="Back" onclick="history.back(-1)">
+        </section>
+    </main>
+</body>
+</html>
